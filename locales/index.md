@@ -2,6 +2,9 @@
 
 | Directory | Language |
 |---|---|
+| [ar-001](ar-001/index.md) | العربية |
+| [ar-dz](ar-dz/index.md) | العربية (الجزائر) |
+| [ar-eg](ar-eg/index.md) | العربية (مصر) |
 | [cy-001](cy-001/index.md) | Cymraeg |
 | [cy-ar](cy-ar/index.md) | Cymraeg (Ariannin) |
 | [cy-gb](cy-gb/index.md) | Cymraeg (Y Deyrnas Unedig) |

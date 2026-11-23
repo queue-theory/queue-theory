@@ -28,6 +28,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 
 | Directory | Picker value | Language | Notes |
 |---|---|---|---|
+| `ar-001` | `ar_001` | العربية | copy of `ar-eg` |
+| `ar-dz` | `ar_DZ` | العربية (الجزائر) | copy of `ar-eg`; `noindex` |
+| `ar-eg` | `ar_EG` | العربية (مصر) | translation source for Arabic; Modern Standard Arabic, formal register, right-to-left; `noindex` |
 | `cy-001` | `cy_001` | Cymraeg | copy of `cy-gb` |
 | `cy-ar` | `cy_AR` | Cymraeg (Ariannin) | copy of `cy-gb`; `noindex` |
 | `cy-gb` | `cy_GB` | Cymraeg (Y Deyrnas Unedig) | translation source for Welsh; `noindex` |
