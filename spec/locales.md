@@ -37,6 +37,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `es-001` | `es_001` | Español | copy of `es-mx` |
 | `es-es` | `es_ES` | Español (España) | `es-mx` adapted to Spain: vocabulary (fallo, recuento, cesta, fiabilidad), decimal comma, 24-hour times; `noindex` |
 | `es-mx` | `es_MX` | Español (México) | translation source for Spanish; `noindex` |
+| `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
+| `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
+| `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
 | `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; `noindex` |
 | `zh-tw` | `zh_TW` | 中文（台灣） | Traditional Chinese, adapted from `zh-cn` with Taiwan vocabulary and 「」 quotes |
