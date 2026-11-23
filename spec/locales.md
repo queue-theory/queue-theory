@@ -34,6 +34,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `en-001` | `en` | English | source of truth (mirror of root `README.md`) |
 | `en-gb` | `en_GB` | English (Great Britain) | British spelling; `noindex` |
 | `en-us` | `en_US` | English (United States) | American spelling; `noindex` |
+| `es-001` | `es_001` | Español | copy of `es-mx` |
+| `es-es` | `es_ES` | Español (España) | `es-mx` adapted to Spain: vocabulary (fallo, recuento, cesta, fiabilidad), decimal comma, 24-hour times; `noindex` |
+| `es-mx` | `es_MX` | Español (México) | translation source for Spanish; `noindex` |
 
 Copies are `noindex` and left out of `sitemap.xml`, so search engines index
 one page per language (`NOINDEX` in `queue-theory.github.io/src/lib/locales.js`).
