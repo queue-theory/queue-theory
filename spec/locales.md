@@ -40,6 +40,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `es-001` | `es_001` | Español | copy of `es-mx` |
 | `es-es` | `es_ES` | Español (España) | `es-mx` adapted to Spain: vocabulary (fallo, recuento, cesta, fiabilidad), decimal comma, 24-hour times; `noindex` |
 | `es-mx` | `es_MX` | Español (México) | translation source for Spanish; `noindex` |
+| `fr-001` | `fr_001` | Français | copy of `fr-fr` |
+| `fr-ca` | `fr_CA` | Français (Canada) | `fr-fr` adapted to Quebec: billet for ticket, no space before ; ? !, 24-hour times written 2 h 00; `noindex` |
+| `fr-fr` | `fr_FR` | Français (France) | translation source for French; formal vous register, French spacing before : ; ? !; `noindex` |
 | `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
 | `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |

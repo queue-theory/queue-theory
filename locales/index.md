@@ -14,6 +14,9 @@
 | [es-001](es-001/index.md) | Español |
 | [es-es](es-es/index.md) | Español (España) |
 | [es-mx](es-mx/index.md) | Español (México) |
+| [fr-001](fr-001/index.md) | Français |
+| [fr-ca](fr-ca/index.md) | Français (Canada) |
+| [fr-fr](fr-fr/index.md) | Français (France) |
 | [hi-001](hi-001/index.md) | हिन्दी |
 | [hi-in](hi-in/index.md) | हिन्दी (भारत) |
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |
