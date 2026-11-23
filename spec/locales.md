@@ -39,6 +39,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `es-mx` | `es_MX` | Español (México) | translation source for Spanish; `noindex` |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
 | `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; `noindex` |
+| `zh-tw` | `zh_TW` | 中文（台灣） | Traditional Chinese, adapted from `zh-cn` with Taiwan vocabulary and 「」 quotes |
 
 Copies are `noindex` and left out of `sitemap.xml`, so search engines index
 one page per language (`NOINDEX` in `queue-theory.github.io/src/lib/locales.js`).

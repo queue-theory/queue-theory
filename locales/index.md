@@ -13,5 +13,6 @@
 | [es-mx](es-mx/index.md) | Español (México) |
 | [zh-001](zh-001/index.md) | 中文 |
 | [zh-cn](zh-cn/index.md) | 中文（中国） |
+| [zh-tw](zh-tw/index.md) | 中文（台灣） |
 
 See [../spec/locales.md](../spec/locales.md).

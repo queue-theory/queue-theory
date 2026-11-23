@@ -15,11 +15,12 @@ content:
 	cp README.md locales/en-001/index.md
 	cd $(SITE) && pnpm run content
 
-# Every locale has index.md, a README.md symlink to it, and the shared peer id.
+# Every locale has index.md, sitemap.xml, a README.md symlink to it, and the shared peer id.
 audit:
 	@cmp -s README.md locales/en-001/index.md || { echo "README.md and locales/en-001/index.md differ: run make content"; exit 1; }
 	@for d in locales/*/; do \
 		test -f $$d/index.md || { echo "missing $$d/index.md"; exit 1; }; \
+		test -f $$d/sitemap.xml || { echo "missing $$d/sitemap.xml: run make content"; exit 1; }; \
 		test "$$(readlink $$d/README.md)" = index.md || { echo "$$d/README.md is not a symlink to index.md"; exit 1; }; \
 		test "$$(cat $$d/.locale-peer-id)" = $(PEER_ID) || { echo "bad $$d/.locale-peer-id"; exit 1; }; \
 	done; echo "locales ok"
