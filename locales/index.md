@@ -11,5 +11,7 @@
 | [es-001](es-001/index.md) | Español |
 | [es-es](es-es/index.md) | Español (España) |
 | [es-mx](es-mx/index.md) | Español (México) |
+| [zh-001](zh-001/index.md) | 中文 |
+| [zh-cn](zh-cn/index.md) | 中文（中国） |
 
 See [../spec/locales.md](../spec/locales.md).

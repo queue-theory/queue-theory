@@ -37,6 +37,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `es-001` | `es_001` | Español | copy of `es-mx` |
 | `es-es` | `es_ES` | Español (España) | `es-mx` adapted to Spain: vocabulary (fallo, recuento, cesta, fiabilidad), decimal comma, 24-hour times; `noindex` |
 | `es-mx` | `es_MX` | Español (México) | translation source for Spanish; `noindex` |
+| `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
+| `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; `noindex` |
 
 Copies are `noindex` and left out of `sitemap.xml`, so search engines index
 one page per language (`NOINDEX` in `queue-theory.github.io/src/lib/locales.js`).
