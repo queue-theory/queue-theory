@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: Queueing theory
+title: Queue theory
 message: >-
   If you use this work and you want to cite it,
   then you can use the metadata from this file.
@@ -12,9 +12,9 @@ authors:
     orcid: 'https://orcid.org/0009-0000-4681-282X'
 identifiers:
   - type: url
-    value: 'https://github.com/joelparkerhenderson/queueing-theory/'
-    description: Queueing theory
-repository-code: 'https://github.com/joelparkerhenderson/queueing-theory/'
+    value: 'https://github.com/queue-theory/queue-theory/'
+    description: Queue theory
+repository-code: 'https://github.com/queue-theory/queue-theory/'
 abstract: >-
-  Queueing theory
+  Queue theory
 license: See license file

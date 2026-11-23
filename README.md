@@ -1,6 +1,6 @@
-# Queueing theory
+# Queue theory
 
-Queueing theory is the mathematical study of waiting lines, or queues. We use
+Queue theory is the mathematical study of waiting lines, or queues. We use
 queueing theory in our software development, for purposes such as analyzing and
 optimizing our practices and processes, such as our customer service
 responsiveness, project management kanban planning, inter-process communication
@@ -15,7 +15,7 @@ Contents:
   - [Devops continuous deployment pipelines](#devops-continuous-deployment-pipelines)
 - [Queue terminology](#queue-terminology)
   - [Queue types and service types](#queue-types-and-service-types)
-- [Queueing theory notation](#queueing-theory-notation)
+- [Queue theory notation](#queue-theory-notation)
   - [Count](#count)
   - [Arrival rate, service rate](#arrival-rate-service-rate)
   - [Utilization ratio a.k.a. traffic intensity](#utilization-ratio-aka-traffic-intensity)
@@ -25,6 +25,10 @@ Contents:
   - [Error ratio](#error-ratio)
   - [Lead time, step time, work time, wait time](#lead-time-step-time-work-time-wait-time)
   - [Standard notation](#standard-notation)
+- [Queue math](#queue-math)
+  - [The utilization curve](#the-utilization-curve)
+  - [Kingman's formula](#kingmans-formula)
+  - [Pooling and Erlang C](#pooling-and-erlang-c)
 - [Activity tracking](#activity-tracking)
   - [Activity examples](#activity-examples)
   - [Little's Law](#littles-law)
@@ -39,6 +43,7 @@ Contents:
 - [Epilog](#epilog)
   - [See also](#see-also)
   - [Thanks](#thanks)
+- [Tracking](#tracking)
 
 ## Introduction
 
@@ -94,13 +99,34 @@ Queue types and service types describe how the queue chooses which items to proc
 
 - Longest Job First (LJF): serve the customer who needs the largest amount of service.
 
-- Time Sharing: serve everyone at the same time; service capacity is distributed evenly among everyone waiting.
+- Shortest Remaining Processing Time (SRPT): like SJF, but a newly arrived short job can preempt a longer job already in service.
 
-## Queueing theory notation
+- Round Robin: serve each customer for a short time slice, then move to the next customer, and repeat.
 
-Queueing theory uses notation with Greek letters.
+- Time Sharing a.k.a. Processor Sharing (PS): serve everyone at the same time; service capacity is distributed evenly among everyone waiting.
 
-Our teams use some of the popular notation; we also add some custom notion that help us with software projects.
+SJF and SRPT minimize the average wait, but they can starve long jobs indefinitely, so real systems often add aging or priority caps.
+
+## Queue theory notation
+
+Queue theory uses notation with Greek letters.
+
+Our teams use some of the popular notation; we also add some custom notation that helps us with software projects.
+
+Crosswalk from our notation to the standard textbook notation:
+
+| Ours | Standard | Meaning                                     |
+| ---- | -------- | ------------------------------------------- |
+| κ    | L        | average number of items in the system       |
+| λ    | λ        | arrival rate                                |
+| χ    | X        | throughput a.k.a. departure rate            |
+| α    | μ (often)| success rate; see service rate disambiguation |
+| ρ    | ρ        | utilization                                 |
+| τ    | W        | average time in the system                  |
+| ω    | Wq       | average time waiting in the queue           |
+| φ    | S        | average service time                        |
+
+Beware of symbol clashes when you read other sources: σ usually means standard deviation, and θ often means the abandonment rate in Erlang-A call center models.
 
 ### Count
 
@@ -124,13 +150,15 @@ The most important notation:
 
 - μ (mu): service rate. This measures how fast items in the queue are being handled.
 
-Examples of generalities for traditional queues:
+Examples of generalities for traditional queues with one server:
 
-- λ = μ means the arrival rate equals the service rate; the queue is staying the same size.
+- λ < μ means the arrival rate is less than the service rate; the queue is stable, meaning it fluctuates around a finite average size.
 
-- λ > μ means the arrival rate is greater than the service rate; the queue is getting larger.
+- λ = μ means the arrival rate equals the service rate; with any randomness at all, the queue drifts and grows without bound.
 
-- λ < μ means the arrival rate is less than the service rate; the queue is getting smaller.
+- λ > μ means the arrival rate is greater than the service rate; the queue grows steadily, by about λ − μ items per time unit.
+
+The intuitive idea that "λ = μ keeps the queue the same size" is true only when arrivals and service are perfectly regular, like a metronome. Real arrivals are bursty, so idle time lost during a lull can never be recovered, and the queue grows during the next burst.
 
 Be aware that some queueing theory practitioners define service rate differently,
 and that service rate may be different due to failures such as errors or skips such as dropouts.
@@ -139,15 +167,15 @@ and that service rate may be different due to failures such as errors or skips s
 
 The most important notation that summarizes a queue:
 
-- ρ (rho): utilization ratio = λ / μ
+- ρ (rho): utilization ratio = λ / μ for one server, or λ / (c μ) for c servers
 
 Examples:
 
-- ρ = 1 means the arrival rate is equal to the service rate; the queue is staying the same size.
+- ρ < 1 means the servers have spare capacity; the queue is stable. The closer ρ gets to 1, the longer the waits; see [the utilization curve](#the-utilization-curve).
 
-- ρ > 1 means the arrival rate is greater than the service rate; the queue is getting larger.
+- ρ = 1 means the servers are busy all the time; the queue is unstable and grows without bound.
 
-- ρ < 1 means the arrival rate is less than the service rate; the queue is getting smaller.
+- ρ > 1 means arrivals exceed capacity; the queue is getting larger.
 
 ### Throughput rates: total rate, success rate, failure rate, skip rate
 
@@ -159,9 +187,9 @@ Throughput rates come in four broad categories:
 
 - β (beta): failure rate. This measures how many items per time period turn out wrong e.g. incorrect, incomplete, rejected.
 
-- σ (sigma): skip rate. This measures how many items per time person skip the queue e.g. dropouts, abandonments, losses.
+- σ (sigma): skip rate. This measures how many items per time period skip the queue e.g. dropouts, abandonments, losses.
 
-For typical queueing theory, total rate = service rate + error rate + skip rate:
+Total rate = success rate + failure rate + skip rate:
 
 - χ = α + β + σ (pronounced: chi equals alpha plus beta plus sigma)
 
@@ -170,7 +198,7 @@ For typical queueing theory, total rate = service rate + error rate + skip rate:
 Depending on context and practitioner, the terminology "service rate" can mean either
 "total rate" or "success rate".
 
-This has historical roots and can lead to confusion and mistakes, epsecially for
+This has historical roots and can lead to confusion and mistakes, especially for
 context and practitioners using queueing theory where there's a significant need
 to track failures and skips.
 
@@ -180,7 +208,7 @@ to track failures and skips.
 
 - Technology View: In applied fields such as software engineering, the service rate measures only successes, whereas the error rate measures failures, and the skip rate measures dropouts.
 
-Therefore we prefer change from this terminology:
+Therefore we prefer to change from this terminology:
 
 - μ (mu): service rate. This measures how fast items in the queue are being handled.
 
@@ -204,13 +232,17 @@ A skip is when an item leaves the queue without any significant processing:
 
 - Reneging: when a customer who has waited already decides to leave because they’ve wasted too much time.
 
-- Jockeying: when a customer switches between queues in a tandem queue system, trying to get a shorter wait.
+A related behavior is not a skip, because the customer stays in the system:
+
+- Jockeying: when a customer switches between parallel queues, such as checkout lanes, trying to get a shorter wait.
 
 ### Error ratio
 
 The most important notation that summarizes a queue's success:
 
-- ε (epsilon): error ratio = service failure count / service total count
+- ε (epsilon): error ratio = failure count / (success count + failure count) = β / (α + β)
+
+Skips are excluded, because a skipped item was never serviced, so it was neither right nor wrong. Track skips separately via σ.
 
 Examples:
 
@@ -242,21 +274,108 @@ Examples:
 
 - θ = 1s means there's 1 second between one completion and the next completion.
 
+Relationships:
+
+- τ = ω + φ: lead time is wait time plus work time. In the examples, 5s = 4s + 1s.
+
+- θ ≈ 1 / χ: in steady state, the average step time is the inverse of the total rate. In the examples, θ = 1s means χ ≈ 1 item per second.
+
 ### Standard notation
 
-Standard notation for queueing theory also uses these symbols:
+Standard notation for queueing theory describes a queue by using Kendall's notation, written as A/S/c/K/N/D:
 
-- n: the number of items in the system.
+- A: the arrival process, meaning the distribution of time between arrivals.
 
-- A: the arrival process probability distribution.
+- S: the service process, meaning the distribution of service times.
 
-- B: the service process probability distribution.
+- c: the number of servers.
 
-- C: the number of servers.
+- K: the capacity, meaning the maximum number of items allowed in the system, waiting or being served, before new arrivals get turned away.
 
-- D: the maximum number of items allowed in the queue at any given time, waiting or being served (without getting bumped).
+- N: the population, meaning the number of potential customers.
 
-- E: the maximum number of items total.
+- D: the discipline, meaning the queue type, such as FIFO or LIFO.
+
+Common letters for A and S:
+
+- M: Markovian a.k.a. memoryless, meaning exponential times, which arise from Poisson arrivals.
+
+- D: Deterministic, meaning constant times.
+
+- G: General, meaning any distribution.
+
+When the last three are omitted, the defaults are K = ∞, N = ∞, D = FIFO. For example, "M/M/1" means Poisson arrivals, exponential service times, one server, unlimited capacity, unlimited population, and first in first out.
+
+Standard notation also uses n to mean the number of items in the system.
+
+## Queue math
+
+### The utilization curve
+
+The single most important result in queueing theory: as utilization approaches 100%, wait time grows without bound, and it grows fastest at the end.
+
+For an M/M/1 queue, where S is the average service time:
+
+- Lead time τ = S / (1 − ρ)
+
+- Wait time ω = S × ρ / (1 − ρ)
+
+| Utilization ρ | Lead time τ | Wait time ω |
+| ------------- | ----------- | ----------- |
+| 50%           | 2 × S       | 1 × S       |
+| 70%           | 3.3 × S     | 2.3 × S     |
+| 80%           | 5 × S       | 4 × S       |
+| 90%           | 10 × S      | 9 × S       |
+| 95%           | 20 × S      | 19 × S      |
+| 99%           | 100 × S     | 99 × S      |
+
+Example: a code review takes 1 hour of work. If reviewers are 80% busy, a review takes about 5 hours from request to done. If reviewers are 95% busy, it takes about 20 hours, even though the reviewers are only 15 percentage points busier.
+
+This is why "keep everyone 100% busy" is a recipe for long lead times, and why the [insights](#insights) below warn against planning for high utilization.
+
+### Kingman's formula
+
+Kingman's formula, a.k.a. the VUT equation, approximates wait time for a single-server queue with any arrival and service distributions (G/G/1):
+
+- ω ≈ (ρ / (1 − ρ)) × ((ca² + cs²) / 2) × S
+
+The three factors are:
+
+- U: utilization factor ρ / (1 − ρ), which is the utilization curve above.
+
+- V: variability factor (ca² + cs²) / 2, where ca is the coefficient of variation of time between arrivals, and cs is the coefficient of variation of service times. The coefficient of variation is the standard deviation divided by the mean.
+
+- T: time factor S, the average service time.
+
+Example: for an M/M/1 queue, ca = cs = 1, so V = 1, and the formula gives the same wait time as the utilization curve. If you make work items more uniform, such as by splitting large tickets so that cs drops from 1 to near 0, then V drops to about 0.5, and the wait time roughly halves at the same utilization.
+
+Kingman's formula shows the three levers for reducing wait time:
+
+- Reduce utilization, such as by adding capacity or limiting work in progress.
+
+- Reduce variability, such as by smaller batches, more uniform work items, or smoother arrivals.
+
+- Reduce service time, such as by automation.
+
+### Pooling and Erlang C
+
+One shared queue that feeds several servers is better than separate queues that each feed one server. This is why banks use one line that feeds many tellers, and why a shared support queue beats per-agent queues.
+
+Example: two servers each take 1 hour per item, and items arrive at 1.6 items per hour in total, so utilization is 80%.
+
+- Separate queues: each server is an M/M/1 queue with 0.8 arrivals per hour, so the lead time is 1 / (1 − 0.8) = 5 hours.
+
+- Pooled queue: both servers share an M/M/2 queue, so the lead time is about 2.8 hours, which is about 44% less, with the same people and the same work.
+
+The Erlang C formula calculates the probability that an arriving item must wait in an M/M/c queue, with offered load a = λ / μ and utilization ρ = a / c:
+
+- P(wait) = ((aᶜ / c!) / (1 − ρ)) / (Σₖ₌₀ᶜ⁻¹ (aᵏ / k!) + (aᶜ / c!) / (1 − ρ))
+
+- Wait time ω = P(wait) / (c μ − λ)
+
+Customer service teams use Erlang C to decide how many agents to staff to meet a target, such as "80% of calls answered within 20 seconds".
+
+Pooling has limits: it works best when any server can handle any item. If items need specialists, then a pooled queue may need routing rules.
 
 ## Activity tracking
 
@@ -274,9 +393,9 @@ Examples:
 
 - Aχ: Activity total rate: how many items out of the queue per time unit.
 
-- Aμ: Activity service rate a.k.a. success rate: how many items are right per time unit.
+- Aα: Activity success rate: how many items are right per time unit.
 
-- Aβ: Activity error rate a.k.a. failure rate: how many items are wrong per time unit.
+- Aβ: Activity failure rate a.k.a. error rate: how many items are wrong per time unit.
 
 - Aσ: Activity skip rate a.k.a. dropout rate: how many items are abandoned per time unit.
 
@@ -300,21 +419,23 @@ Example notation:
 
 - L: long-term average number of customers in the system. We prefer κ (kappa).
 
-- λ: long-term average effective arrival rate.
+- λ: long-term average effective arrival rate, meaning items that actually enter the system, so excluding balks.
 
 - W: long-term average time an item is in the system. We prefer τ (tau).
 
-- L = λ W is Little's law. We prefer κ = λ τ (kappa = lamba \* tau).
+- L = λ W is Little's law. We prefer κ = λ τ (kappa = lambda \* tau).
+
+Little's law is remarkably general: it holds regardless of the arrival distribution, the service distribution, the number of servers, or the queue type.
 
 Little's law assumptions:
 
 - All measurement units are consistent.
 
-- Conservation of flow, meaning the average arrival rate equals the average departure rate.
+- The system is stable, meaning the average arrival rate equals the average departure rate over the measurement period, and the number of items is roughly the same at the beginning and at the end.
 
-- All work that enters the system then flows through to completion.
+- Items that leave early, such as by reneging, are either counted consistently in both λ and τ, or excluded consistently from both.
 
-- The system is “stable”, meaning the average age of items are neither increasing or decreasing, and the total number of items is roughly the same at the beginning and at the end.
+Example: a team has κ = 20 tickets in progress, and finishes λ = 4 tickets per week, so the average ticket takes τ = κ / λ = 5 weeks. To cut lead time in half without working faster, cut work in progress in half.
 
 ### Key performance indicators (KPIs)
 
@@ -324,11 +445,11 @@ We have built many projects, and we believe the most valuable summary indicators
 
 - Dτ = Delivery lead time. Product teams may say "from concept to customer" or "from idea to implementation".
 
-- Dμ = Delivery service rate. Devops teams may say "deployment frequency" or "we ship X times per day".
+- Dα = Delivery success rate. Devops teams may say "deployment frequency" or "we ship X times per day".
 
 - Dε = Delivery error ratio. Quality teams may say "change fail rate" or "percentage of rollbacks".
 
-- Rτ = Restore lead time. Site reliability engineers may say "time to restore service" or "mean time to restore (MTTR)".
+- Rτ = Restore lead time. Site reliability engineers may say "failed deployment recovery time" or "mean time to restore (MTTR)".
 
 ## Service metrics
 
@@ -362,10 +483,11 @@ MTTR represents four different measurements:
 Example scenario:
 
 - 2:00 AM — Outage begins
-- 2:15 AM — Alert fires, on-call acknowledges → Response time: 10 min
-- 2:45 AM — Root cause identified, fix deployed → Repair time: 20 min
-- 3:00 AM — Service verified working for users → Recovery time: 30 min
-- 3:30 AM — Incident ticket closed after verification → Resolution time: 40 min
+- 2:05 AM — Alert fires, incident is detected
+- 2:15 AM — On-call acknowledges and starts work → Response time: 10 min (2:05 to 2:15)
+- 2:45 AM — Root cause identified, fix deployed → Repair time: 30 min (2:15 to 2:45)
+- 3:00 AM — Service verified working for users → Recovery time: 60 min (2:00 to 3:00)
+- 3:30 AM — Incident ticket closed after verification → Resolution time: 85 min (2:05 to 3:30)
 
 Related metrics:
 
@@ -375,21 +497,29 @@ Related metrics:
 
 ### DORA metrics
 
-DevOps Research and Assessment (DORA) metrics are industry standard key performance indicators (KPIs) specifically for software engineering devops teams.
+DevOps Research and Assessment (DORA) metrics are industry standard key performance indicators (KPIs) specifically for software engineering devops teams. See [dora.dev](https://dora.dev/guides/dora-metrics/).
 
-- **Change Lead Time** - Time to implement, test, and deliver code for a feature (measured from first commit to deployment). Be specific what you mean by start and finish. For example, some teams like to measure from when a developer starts work on a ticket, to when the the devloper pushes the work to a continuous integration process; this approach tends to be more effective for measuring person productivity.
+DORA now uses five metrics, in two groups.
 
-- **Deployment Frequency** - Number of deployments in a given duration of time. Be specific what you mean by deployment and how you're tracking frequency. For example, some teams do a deployment to a fleet of production servers and track the full rollout, whereas other teams do demployment to a single user acceptance test (UAT) server and track when the project manager sends an email announcement to the users to try testing.
+Throughput metrics:
 
-- **Change Failure Rate** - Percentage of failed changes over all changes (regardless of success). Be specific what you mean by failure. For example, some teams count a failure when they start on a work ticket then realize the work ticket doesn't have enough information to proceed, so the team rejects the work ticket back to the specification team.
+- **Change Lead Time** - Time to implement, test, and deliver code for a feature (measured from commit to deployment in production). Be specific what you mean by start and finish. For example, some teams like to measure from when a developer starts work on a ticket, to when the developer pushes the work to a continuous integration process; this approach tends to be more effective for measuring person productivity.
 
-- **Mean Time to Recovery (MTTR)** - Time it takes to restore service after production failure. Be specific what you mean by recovery. For example, some teams count recovery as complete resolution meaning total time from when an incident is detected to when an incident is fully closed; this approach is better described as Mean Time To Resolve.
+- **Deployment Frequency** - Number of deployments in a given duration of time. Be specific what you mean by deployment and how you're tracking frequency. For example, some teams do a deployment to a fleet of production servers and track the full rollout, whereas other teams do deployment to a single user acceptance test (UAT) server and track when the project manager sends an email announcement to the users to try testing.
 
-- **Reliability** - A broader, often qualitative, assessment of service consistency. This metric helps show that high velocity does not come at the expense of system capability. Be specific what you mean by reliability. Some examples are availability, uptime, latency, accuracy, and service level objectives.
+- **Failed Deployment Recovery Time** - Time it takes to recover from a deployment that causes a failure in production. This was formerly called Mean Time to Recovery (MTTR) or Time to Restore Service. Be specific what you mean by recovery. For example, some teams count recovery as complete resolution meaning total time from when an incident is detected to when an incident is fully closed; this approach is better described as Mean Time To Resolve.
+
+Instability metrics:
+
+- **Change Failure Rate** - Percentage of deployments that cause a failure in production and need immediate remediation, such as a rollback or hotfix. Be specific what you mean by failure. For example, some teams also count a failure when they start on a work ticket then realize the work ticket doesn't have enough information to proceed, so the team rejects the work ticket back to the specification team.
+
+- **Deployment Rework Rate** - Percentage of deployments that are unplanned, such as to fix a production incident. This is unplanned deployments divided by total deployments. DORA added this metric in 2024.
+
+Earlier DORA reports also discussed **Reliability** as an operational performance metric: a broader, often qualitative, assessment of service consistency, such as availability, uptime, latency, accuracy, and service level objectives. Reliability helps show that high velocity does not come at the expense of system capability.
 
 ## Queue of queues
 
-Queueing theory is easy to extend to a queue of queues, such a higher-level processes that contains lower-level stages, or phases, or gates.
+Queue theory is easy to extend to a queue of queues, such as a higher-level process that contains lower-level stages, or phases, or gates.
 
 ### Double Diamond queue of queues
 
@@ -400,12 +530,14 @@ For example, consider the "Double Diamond" innovation process model, which speci
 3. Develop: Give different answers to the clearly defined problem.
 4. Deliver: Test different solutions at a small scale then improve them.
 
-Queueing theory can model this as one process queue that contains four stage queues:
+Queue theory can model this as one process queue that contains four stage queues:
 
-- The arrival rate of of the process is the arrival rate of stage 1.
-- The success rate of of the process is the success rate of stage 4.
+- The arrival rate of the process is the arrival rate of stage 1.
+- The success rate of the process is the success rate of stage 4.
 - The error count of the process is the sum of the stages' error counts.
 - The skip count of the process is the sum of the stages' skip counts.
+- The lead time of the process is the sum of the stages' lead times.
+- The maximum throughput of the process is the throughput of the slowest stage, a.k.a. the bottleneck.
 
 ### Funnel queue of queues
 
@@ -413,13 +545,13 @@ In our practical work, we frequently use the word "funnel" to loosely describe a
 
 - Hiring queue that uses an outreach stage, interview stage, and offer stage. For this kind of queue, we aim to maximize the stage 1 arrival rate, meaning increasing our outreach, such as via promotions.
 
-- Purchasing queue that uses a customer search stage, shopping cart stage, and payment stage. For this kind of queue, we aim to minimize the stage 2 skip rate, meaning reducing cart abandonment, such a via reminders.
+- Purchasing queue that uses a customer search stage, shopping cart stage, and payment stage. For this kind of queue, we aim to minimize the stage 2 skip rate, meaning reducing cart abandonment, such as via reminders.
 
 - Programming queue that uses an integration stage, user acceptance stage, and production rollout stage. For this kind of queue, we aim to minimize the error rate of the production rollout stage, such as via canary telemetry.
 
 ## Insights
 
-[Seven insights into queueing theory by Bob Wescott](seven-insights-into-queueing-theory-by-bob-wescott.pdf)
+Seven insights into queueing theory, by Bob Wescott, author of "The Every Computer Performance Book" (see also [Kottke's summary](https://kottke.org/19/01/its-time-for-some-queueing-theory)):
 
 1. The slower the service center, the lower the maximum utilization you should plan for at peak load.
 
@@ -467,17 +599,27 @@ Introductions by John D. Cook:
 
 Introductions with more detail:
 
-- [Queuing Theory: Simple Definition, Notation and Terminology](https://www.statisticshowto.datasciencecentral.com/queuing-theory/)
+- [Queuing Theory: Simple Definition, Notation and Terminology](https://www.statisticshowto.com/queuing-theory/)
 
 - [The most important thing to understand about queues - By Dan Slimmon](https://blog.danslimmon.com/2016/08/26/the-most-important-thing-to-understand-about-queues/)
 
-- [Operations Research - Notes. By J E Beasley](http://people.brunel.ac.uk/~mastjjb/jeb/or/queue.html)
+- [Operations Research - Notes. By J E Beasley](https://people.brunel.ac.uk/~mastjjb/jeb/or/queue.html)
 
-- [Little’s Law – the basis of Lean and Kanban](http://itsadeliverything.com/littles-law-the-basis-of-lean-and-kanban)
+- [Little’s Law – the basis of Lean and Kanban](https://itsadeliverything.com/littles-law-the-basis-of-lean-and-kanban)
+
+- [Waiting time, load factor, and queueing theory - By Erik Bernhardsson](https://erikbern.com/2018/03/27/waiting-time-load-factor-and-queueing-theory)
 
 - [Investopedia: Queueing theory](https://www.investopedia.com/terms/q/queuing-theory.asp)
 
 - [It's time for some queueing theory - By Kottke](https://kottke.org/19/01/its-time-for-some-queueing-theory)
+
+Formulas:
+
+- [Kendall's notation](https://en.wikipedia.org/wiki/Kendall%27s_notation)
+
+- [Kingman's formula](https://en.wikipedia.org/wiki/Kingman%27s_formula)
+
+- [Erlang C formula](<https://en.wikipedia.org/wiki/Erlang_(unit)#Erlang_C_formula>)
 
 ### Thanks
 
@@ -485,9 +627,9 @@ Introductions with more detail:
 
 ## Tracking
 
-- Package: queueing-theory
-- Version: 2.0.0
+- Package: queue-theory
+- Version: 3.0.0
 - Created: 2019-01-25T04:17:56Z
-- Updated: 2026-02-07T10:42:20Z
-- License: MIT or Apache-2.0 or GPL-2.0 or GPL-3.0 or contact us for more
+- Updated: 2026-11-23T15:33:48Z
+- License: Apache, BSD, CC, GPL, MIT, OGL, or contact us; see LICENSE.md.
 - Contact: Joel Parker Henderson <joel@joelparkerhenderson.com>
