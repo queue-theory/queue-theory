@@ -102,6 +102,8 @@
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
+| [sco-001](sco-001/index.md) | Scots |
+| [sco-gb](sco-gb/index.md) | Scots (Scotland) |
 | [sv-001](sv-001/index.md) | Svenska |
 | [sv-se](sv-se/index.md) | Svenska (Sverige) |
 | [sw-001](sw-001/index.md) | Kiswahili |

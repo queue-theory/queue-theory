@@ -128,6 +128,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ru-001` | `ru_001` | Русский | copy of `ru-ru` |
 | `ru-by` | `ru_BY` | Русский (Беларусь) | copy of `ru-ru`; `noindex` |
 | `ru-ru` | `ru_RU` | Русский (Россия) | translation source for Russian; formal вы register, «» quotes; `noindex` |
+| `sco-001` | `sco_001` | Scots | copy of `sco-gb` |
+| `sco-gb` | `sco_GB` | Scots (Scotland) | translation source for Scots; formal address (please, you), decimal point, `10%`; `noindex` |
 | `sv-001` | `sv_001` | Svenska | copy of `sv-se` |
 | `sv-se` | `sv_SE` | Svenska (Sverige) | translation source for Swedish; formal address (ni); `noindex` |
 | `sw-001` | `sw_001` | Kiswahili | copy of `sw-tz` |
