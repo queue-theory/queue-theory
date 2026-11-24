@@ -30,6 +30,8 @@
 | [ja-jp](ja-jp/index.md) | 日本語（日本） |
 | [ko-001](ko-001/index.md) | 한국어 |
 | [ko-kr](ko-kr/index.md) | 한국어(대한민국) |
+| [nl-001](nl-001/index.md) | Nederlands |
+| [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |

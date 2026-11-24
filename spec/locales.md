@@ -56,6 +56,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ja-jp` | `ja_JP` | 日本語（日本） | translation source for Japanese; formal です・ます register; `noindex` |
 | `ko-001` | `ko_001` | 한국어 | copy of `ko-kr` |
 | `ko-kr` | `ko_KR` | 한국어(대한민국) | translation source for Korean; formal 합니다체 register; `noindex` |
+| `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
+| `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `ru-001` | `ru_001` | Русский | copy of `ru-ru` |
 | `ru-by` | `ru_BY` | Русский (Беларусь) | copy of `ru-ru`; `noindex` |
 | `ru-ru` | `ru_RU` | Русский (Россия) | translation source for Russian; formal вы register, «» quotes; `noindex` |
