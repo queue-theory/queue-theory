@@ -23,6 +23,9 @@
 | [hi-001](hi-001/index.md) | हिन्दी |
 | [hi-in](hi-in/index.md) | हिन्दी (भारत) |
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |
+| [id-001](id-001/index.md) | Bahasa Indonesia |
+| [id-id](id-id/index.md) | Bahasa Indonesia (Indonesia) |
+| [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
