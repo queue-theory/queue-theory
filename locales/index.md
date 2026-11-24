@@ -26,6 +26,8 @@
 | [id-001](id-001/index.md) | Bahasa Indonesia |
 | [id-id](id-id/index.md) | Bahasa Indonesia (Indonesia) |
 | [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
+| [ja-001](ja-001/index.md) | 日本語 |
+| [ja-jp](ja-jp/index.md) | 日本語（日本） |
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
