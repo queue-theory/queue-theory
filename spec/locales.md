@@ -97,6 +97,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `kn-001` | `kn_001` | ಕನ್ನಡ | translation source for Kannada; formal address (ನೀವು, ದಯವಿಟ್ಟು), decimal point, “ ” quotes |
 | `ko-001` | `ko_001` | 한국어 | copy of `ko-kr` |
 | `ko-kr` | `ko_KR` | 한국어(대한민국) | translation source for Korean; formal 합니다체 register; `noindex` |
+| `kw-001` | `kw_001` | Kernewek | copy of `kw-gb` |
+| `kw-gb` | `kw_GB` | Kernewek (Breten Veur) | translation source for Cornish (Standard Written Form); formal address (hwi, -ewgh imperatives, mar pleg), decimal point, “ ” quotes; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
