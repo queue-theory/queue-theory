@@ -59,6 +59,8 @@
 | [id-001](id-001/index.md) | Bahasa Indonesia |
 | [id-id](id-id/index.md) | Bahasa Indonesia (Indonesia) |
 | [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
+| [is-001](is-001/index.md) | Íslenska |
+| [is-is](is-is/index.md) | Íslenska (Ísland) |
 | [it-001](it-001/index.md) | Italiano |
 | [it-it](it-it/index.md) | Italiano (Italia) |
 | [ja-001](ja-001/index.md) | 日本語 |

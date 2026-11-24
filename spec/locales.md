@@ -85,6 +85,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `id-001` | `id_001` | Bahasa Indonesia | copy of `id-id` |
 | `id-id` | `id_ID` | Bahasa Indonesia (Indonesia) | translation source for Indonesian; formal Anda register; `noindex` |
 | `id-my` | `id_MY` | Bahasa Indonesia (Malaysia) | copy of `id-id`; `noindex` |
+| `is-001` | `is_001` | Íslenska | copy of `is-is` |
+| `is-is` | `is_IS` | Íslenska (Ísland) | translation source for Icelandic; formal address (þér, plural imperatives), decimal comma, „ “ quotes; `noindex` |
 | `it-001` | `it_001` | Italiano | copy of `it-it` |
 | `it-it` | `it_IT` | Italiano (Italia) | translation source for Italian; formal address (Lei), decimal comma; `noindex` |
 | `ja-001` | `ja_001` | 日本語 | copy of `ja-jp` |
