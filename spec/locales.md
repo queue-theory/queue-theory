@@ -68,6 +68,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `fr-ca` | `fr_CA` | Français (Canada) | `fr-fr` adapted to Quebec: billet for ticket, no space before ; ? !, 24-hour times written 2 h 00; `noindex` |
 | `fr-fr` | `fr_FR` | Français (France) | translation source for French; formal vous register, French spacing before : ; ? !; `noindex` |
 | `fr-lu` | `fr_LU` | Français (Luxembourg) | copy of `fr-fr`; `noindex` |
+| `ga-001` | `ga_001` | Gaeilge | copy of `ga-ie` |
+| `ga-ie` | `ga_IE` | Gaeilge (Éire) | translation source for Irish; formal address (sibh, plural forms); `noindex` |
 | `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
 | `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |
