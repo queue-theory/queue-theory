@@ -124,6 +124,7 @@
 | [vi-001](vi-001/index.md) | Tiếng Việt |
 | [vi-vn](vi-vn/index.md) | Tiếng Việt (Việt Nam) |
 | [wuu-001](wuu-001/index.md) | 吴语 |
+| [yue-001](yue-001/index.md) | 粵語 |
 | [zh-001](zh-001/index.md) | 中文 |
 | [zh-cn](zh-cn/index.md) | 中文（中国） |
 | [zh-tw](zh-tw/index.md) | 中文（台灣） |

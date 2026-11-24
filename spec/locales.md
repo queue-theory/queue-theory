@@ -150,6 +150,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `vi-001` | `vi_001` | Tiếng Việt | copy of `vi-vn` |
 | `vi-vn` | `vi_VN` | Tiếng Việt (Việt Nam) | translation source for Vietnamese; formal address (quý vị); `noindex` |
 | `wuu-001` | `wuu_001` | 吴语 | translation source for Wu Chinese; Simplified characters, Shanghai-style written Wu; no formal/informal pronoun choice (侬) |
+| `yue-001` | `yue_001` | 粵語 | translation source for Cantonese; Traditional characters, Hong Kong-style written Cantonese; formal address (您) |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
 | `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; formal address (您); `noindex` |
 | `zh-tw` | `zh_TW` | 中文（台灣） | Traditional Chinese, adapted from `zh-cn` with Taiwan vocabulary, 「」 quotes, and formal address (您) |
