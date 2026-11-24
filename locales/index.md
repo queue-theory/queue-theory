@@ -48,6 +48,8 @@
 | [sv-se](sv-se/index.md) | Svenska (Sverige) |
 | [sw-001](sw-001/index.md) | Kiswahili |
 | [sw-tz](sw-tz/index.md) | Kiswahili (Tanzania) |
+| [tr-001](tr-001/index.md) | Türkçe |
+| [tr-tr](tr-tr/index.md) | Türkçe (Türkiye) |
 | [ur-001](ur-001/index.md) | اردو |
 | [vi-001](vi-001/index.md) | Tiếng Việt |
 | [vi-vn](vi-vn/index.md) | Tiếng Việt (Việt Nam) |
