@@ -91,6 +91,7 @@
 | [nl-be](nl-be/index.md) | Nederlands (België) |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [pa-001](pa-001/index.md) | ਪੰਜਾਬੀ |
+| [pcm-001](pcm-001/index.md) | Naijá |
 | [pt-001](pt-001/index.md) | Português |
 | [pt-br](pt-br/index.md) | Português (Brasil) |
 | [pt-pt](pt-pt/index.md) | Português (Portugal) |
