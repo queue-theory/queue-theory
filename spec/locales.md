@@ -101,6 +101,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `kw-gb` | `kw_GB` | Kernewek (Breten Veur) | translation source for Cornish (Standard Written Form); formal address (hwi, -ewgh imperatives, mar pleg), decimal point, “ ” quotes; `noindex` |
 | `lb-001` | `lb_001` | Lëtzebuergesch | copy of `lb-lu` |
 | `lb-lu` | `lb_LU` | Lëtzebuergesch (Lëtzebuerg) | translation source for Luxembourgish (2019 orthography, n-rule); formal address (Dir, Är, w.e.g.), decimal comma, „ “ quotes; `noindex` |
+| `lo-001` | `lo_001` | ລາວ | copy of `lo-la` |
+| `lo-la` | `lo_LA` | ລາວ (ປະເທດລາວ) | translation source for Lao; formal address (ທ່ານ, ກະລຸນາ), decimal point, “ ” quotes; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
