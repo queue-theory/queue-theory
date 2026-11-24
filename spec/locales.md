@@ -130,6 +130,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ru-ru` | `ru_RU` | Русский (Россия) | translation source for Russian; formal вы register, «» quotes; `noindex` |
 | `sco-001` | `sco_001` | Scots | copy of `sco-gb` |
 | `sco-gb` | `sco_GB` | Scots (Scotland) | translation source for Scots; formal address (please, you), decimal point, `10%`; `noindex` |
+| `sk-001` | `sk_001` | Slovenčina | copy of `sk-sk` |
+| `sk-sk` | `sk_SK` | Slovenčina (Slovensko) | translation source for Slovak; formal address (vykanie, prosím), decimal comma, `10 %`, „ “ quotes, 24-hour times; `noindex` |
 | `sv-001` | `sv_001` | Svenska | copy of `sv-se` |
 | `sv-se` | `sv_SE` | Svenska (Sverige) | translation source for Swedish; formal address (ni); `noindex` |
 | `sw-001` | `sw_001` | Kiswahili | copy of `sw-tz` |
