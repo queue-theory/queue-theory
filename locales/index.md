@@ -32,6 +32,8 @@
 | [es-mx](es-mx/index.md) | Español (México) |
 | [et-001](et-001/index.md) | Eesti |
 | [et-ee](et-ee/index.md) | Eesti (Eesti) |
+| [eu-001](eu-001/index.md) | Euskara |
+| [eu-es](eu-es/index.md) | Euskara (Espainia) |
 | [fr-001](fr-001/index.md) | Français |
 | [fr-ca](fr-ca/index.md) | Français (Canada) |
 | [fr-fr](fr-fr/index.md) | Français (France) |
