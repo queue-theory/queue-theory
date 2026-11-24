@@ -90,6 +90,7 @@
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-be](nl-be/index.md) | Nederlands (België) |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
+| [pa-001](pa-001/index.md) | ਪੰਜਾਬੀ |
 | [pt-001](pt-001/index.md) | Português |
 | [pt-br](pt-br/index.md) | Português (Brasil) |
 | [pt-pt](pt-pt/index.md) | Português (Portugal) |
