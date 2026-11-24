@@ -85,6 +85,8 @@
 | [ms-001](ms-001/index.md) | Bahasa Melayu |
 | [mt-001](mt-001/index.md) | Malti |
 | [mt-mt](mt-mt/index.md) | Malti (Malta) |
+| [nb-001](nb-001/index.md) | Norsk bokmål |
+| [nb-no](nb-no/index.md) | Norsk bokmål (Norge) |
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [pt-001](pt-001/index.md) | Português |

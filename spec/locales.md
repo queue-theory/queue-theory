@@ -111,6 +111,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ms-001` | `ms_001` | Bahasa Melayu | translation source for Malay; formal address (anda, sila), decimal point, “ ” quotes |
 | `mt-001` | `mt_001` | Malti | copy of `mt-mt` |
 | `mt-mt` | `mt_MT` | Malti (Malta) | translation source for Maltese; formal address (jekk jogħġbok), decimal point, “ ” quotes; `noindex` |
+| `nb-001` | `nb_001` | Norsk bokmål | copy of `nb-no` |
+| `nb-no` | `nb_NO` | Norsk bokmål (Norge) | translation source for Norwegian Bokmål; formal address (De, Deres, vennligst), decimal comma, `10 %`, « » quotes; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
