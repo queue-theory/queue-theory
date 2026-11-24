@@ -10,6 +10,8 @@
 | [bn-001](bn-001/index.md) | বাংলা |
 | [bn-bd](bn-bd/index.md) | বাংলা (বাংলাদেশ) |
 | [bn-in](bn-in/index.md) | বাংলা (ভারত) |
+| [cs-001](cs-001/index.md) | Čeština |
+| [cs-cz](cs-cz/index.md) | Čeština (Česko) |
 | [cy-001](cy-001/index.md) | Cymraeg |
 | [cy-ar](cy-ar/index.md) | Cymraeg (Ariannin) |
 | [cy-gb](cy-gb/index.md) | Cymraeg (Y Deyrnas Unedig) |

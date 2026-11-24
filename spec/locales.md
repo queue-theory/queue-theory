@@ -36,6 +36,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `bn-001` | `bn_001` | বাংলা | copy of `bn-bd` |
 | `bn-bd` | `bn_BD` | বাংলা (বাংলাদেশ) | translation source for Bengali; formal আপনি register; `noindex` |
 | `bn-in` | `bn_IN` | বাংলা (ভারত) | copy of `bn-bd`; `noindex` |
+| `cs-001` | `cs_001` | Čeština | copy of `cs-cz` |
+| `cs-cz` | `cs_CZ` | Čeština (Česko) | translation source for Czech; Latin script, formal address (Vy), decimal comma; `noindex` |
 | `cy-001` | `cy_001` | Cymraeg | copy of `cy-gb` |
 | `cy-ar` | `cy_AR` | Cymraeg (Ariannin) | copy of `cy-gb`; `noindex` |
 | `cy-gb` | `cy_GB` | Cymraeg (Y Deyrnas Unedig) | translation source for Welsh; `noindex` |
