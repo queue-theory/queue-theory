@@ -37,6 +37,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `cy-001` | `cy_001` | Cymraeg | copy of `cy-gb` |
 | `cy-ar` | `cy_AR` | Cymraeg (Ariannin) | copy of `cy-gb`; `noindex` |
 | `cy-gb` | `cy_GB` | Cymraeg (Y Deyrnas Unedig) | translation source for Welsh; `noindex` |
+| `de-001` | `de_001` | Deutsch | copy of `de-de` |
+| `de-at` | `de_AT` | Deutsch (Österreich) | copy of `de-de`; `noindex` |
+| `de-de` | `de_DE` | Deutsch (Deutschland) | translation source for German; formal address (Sie); `noindex` |
 | `en-001` | `en` | English | source of truth (mirror of root `README.md`) |
 | `en-gb` | `en_GB` | English (Great Britain) | British spelling; `noindex` |
 | `en-us` | `en_US` | English (United States) | American spelling; `noindex` |
