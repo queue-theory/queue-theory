@@ -5,6 +5,8 @@
 | [ar-001](ar-001/index.md) | العربية |
 | [ar-dz](ar-dz/index.md) | العربية (الجزائر) |
 | [ar-eg](ar-eg/index.md) | العربية (مصر) |
+| [bg-001](bg-001/index.md) | Български |
+| [bg-bg](bg-bg/index.md) | Български (България) |
 | [bn-001](bn-001/index.md) | বাংলা |
 | [bn-bd](bn-bd/index.md) | বাংলা (বাংলাদেশ) |
 | [bn-in](bn-in/index.md) | বাংলা (ভারত) |
