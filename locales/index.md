@@ -73,6 +73,8 @@
 | [ko-kr](ko-kr/index.md) | 한국어(대한민국) |
 | [kw-001](kw-001/index.md) | Kernewek |
 | [kw-gb](kw-gb/index.md) | Kernewek (Breten Veur) |
+| [lb-001](lb-001/index.md) | Lëtzebuergesch |
+| [lb-lu](lb-lu/index.md) | Lëtzebuergesch (Lëtzebuerg) |
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [pt-001](pt-001/index.md) | Português |
