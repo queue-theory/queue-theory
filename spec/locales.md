@@ -108,6 +108,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `lv-001` | `lv_001` | Latviešu | copy of `lv-lv` |
 | `lv-lv` | `lv_LV` | Latviešu (Latvija) | translation source for Latvian; formal address (Jūs, -iet imperatives, lūdzu), decimal comma, „ “ quotes; `noindex` |
 | `mr-001` | `mr_001` | मराठी | translation source for Marathi; formal address (आपण, कृपया), decimal point, “ ” quotes |
+| `ms-001` | `ms_001` | Bahasa Melayu | translation source for Malay; formal address (anda, sila), decimal point, “ ” quotes |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
