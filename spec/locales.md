@@ -118,6 +118,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pa-001` | `pa_001` | ਪੰਜਾਬੀ | translation source for Punjabi (Gurmukhi); formal address (ਤੁਸੀਂ, ਕਿਰਪਾ ਕਰਕੇ), decimal point, “ ” quotes |
 | `pcm-001` | `pcm_001` | Naijá | translation source for Nigerian Pidgin; polite address (please, you), decimal point, " " quotes |
+| `pl-001` | `pl_001` | Polski | copy of `pl-pl` |
+| `pl-pl` | `pl_PL` | Polski (Polska) | translation source for Polish; formal address (prosimy, proszę, impersonal forms), decimal comma, `10%`, „ ” quotes; `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
 | `pt-br` | `pt_BR` | Português (Brasil) | translation source for Portuguese; formal address (imperative and impersonal forms, no tu); `noindex` |
 | `pt-pt` | `pt_PT` | Português (Portugal) | copy of `pt-br` with European Portuguese spelling and vocabulary; `noindex` |
