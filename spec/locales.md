@@ -71,6 +71,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `sv-se` | `sv_SE` | Svenska (Sverige) | translation source for Swedish; formal address (ni); `noindex` |
 | `sw-001` | `sw_001` | Kiswahili | copy of `sw-tz` |
 | `sw-tz` | `sw_TZ` | Kiswahili (Tanzania) | translation source for Swahili; respectful plural address (tazameni, punguzeni); `noindex` |
+| `ur-001` | `ur_001` | اردو | translation source for Urdu; right-to-left; formal address (آپ) |
 | `vi-001` | `vi_001` | Tiếng Việt | copy of `vi-vn` |
 | `vi-vn` | `vi_VN` | Tiếng Việt (Việt Nam) | translation source for Vietnamese; formal address (quý vị); `noindex` |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
