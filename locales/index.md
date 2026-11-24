@@ -11,6 +11,7 @@
 | [cy-001](cy-001/index.md) | Cymraeg |
 | [cy-ar](cy-ar/index.md) | Cymraeg (Ariannin) |
 | [cy-gb](cy-gb/index.md) | Cymraeg (Y Deyrnas Unedig) |
+| [da-001](da-001/index.md) | Dansk |
 | [de-001](de-001/index.md) | Deutsch |
 | [de-at](de-at/index.md) | Deutsch (Österreich) |
 | [de-de](de-de/index.md) | Deutsch (Deutschland) |
