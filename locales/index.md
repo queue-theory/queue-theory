@@ -83,6 +83,8 @@
 | [lv-lv](lv-lv/index.md) | Latviešu (Latvija) |
 | [mr-001](mr-001/index.md) | मराठी |
 | [ms-001](ms-001/index.md) | Bahasa Melayu |
+| [mt-001](mt-001/index.md) | Malti |
+| [mt-mt](mt-mt/index.md) | Malti (Malta) |
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [pt-001](pt-001/index.md) | Português |
