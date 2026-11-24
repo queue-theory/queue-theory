@@ -73,6 +73,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `gd-001` | `gd_001` | Gàidhlig | copy of `gd-gb` |
 | `gd-gb` | `gd_GB` | Gàidhlig (Breatainn Mhòr) | translation source for Scottish Gaelic; formal address (sibh, plural imperatives); `noindex` |
 | `gu-001` | `gu_001` | ગુજરાતી | translation source for Gujarati; formal address (આપ); Western digits so numbers match the formulas |
+| `ha-001` | `ha_001` | Hausa | translation source for Hausa; formal address (ku, plural forms); Boko (Latin) script |
 | `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
 | `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |

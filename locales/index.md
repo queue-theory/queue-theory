@@ -47,6 +47,7 @@
 | [gd-001](gd-001/index.md) | Gàidhlig |
 | [gd-gb](gd-gb/index.md) | Gàidhlig (Breatainn Mhòr) |
 | [gu-001](gu-001/index.md) | ગુજરાતી |
+| [ha-001](ha-001/index.md) | Hausa |
 | [hi-001](hi-001/index.md) | हिन्दी |
 | [hi-in](hi-in/index.md) | हिन्दी (भारत) |
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |
