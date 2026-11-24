@@ -61,6 +61,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ko-kr` | `ko_KR` | 한국어(대한민국) | translation source for Korean; formal 합니다체 register; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
+| `pt-001` | `pt_001` | Português | copy of `pt-br` |
+| `pt-br` | `pt_BR` | Português (Brasil) | translation source for Portuguese; formal address (imperative and impersonal forms, no tu); `noindex` |
+| `pt-pt` | `pt_PT` | Português (Portugal) | copy of `pt-br` with European Portuguese spelling and vocabulary; `noindex` |
 | `ru-001` | `ru_001` | Русский | copy of `ru-ru` |
 | `ru-by` | `ru_BY` | Русский (Беларусь) | copy of `ru-ru`; `noindex` |
 | `ru-ru` | `ru_RU` | Русский (Россия) | translation source for Russian; formal вы register, «» quotes; `noindex` |

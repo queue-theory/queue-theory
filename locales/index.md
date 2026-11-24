@@ -35,6 +35,9 @@
 | [ko-kr](ko-kr/index.md) | 한국어(대한민국) |
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
+| [pt-001](pt-001/index.md) | Português |
+| [pt-br](pt-br/index.md) | Português (Brasil) |
+| [pt-pt](pt-pt/index.md) | Português (Portugal) |
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
