@@ -145,6 +145,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `tl-001` | `tl_001` | Tagalog | translation source for Tagalog; formal address (kayo, ninyo, po, paki-), decimal point, “ ” quotes |
 | `tr-001` | `tr_001` | Türkçe | copy of `tr-tr` |
 | `tr-tr` | `tr_TR` | Türkçe (Türkiye) | translation source for Turkish; formal address (siz), decimal comma, percent sign first (%80); `noindex` |
+| `uk-001` | `uk_001` | Українська | translation source for Ukrainian; formal address (ви), decimal comma, «» quotes, 24-hour times |
 | `ur-001` | `ur_001` | اردو | translation source for Urdu; right-to-left; formal address (آپ) |
 | `vi-001` | `vi_001` | Tiếng Việt | copy of `vi-vn` |
 | `vi-vn` | `vi_VN` | Tiếng Việt (Việt Nam) | translation source for Vietnamese; formal address (quý vị); `noindex` |
