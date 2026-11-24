@@ -28,6 +28,8 @@
 | [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
 | [ja-001](ja-001/index.md) | 日本語 |
 | [ja-jp](ja-jp/index.md) | 日本語（日本） |
+| [ko-001](ko-001/index.md) | 한국어 |
+| [ko-kr](ko-kr/index.md) | 한국어(대한민국) |
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
