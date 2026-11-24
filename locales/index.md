@@ -30,6 +30,8 @@
 | [es-001](es-001/index.md) | Español |
 | [es-es](es-es/index.md) | Español (España) |
 | [es-mx](es-mx/index.md) | Español (México) |
+| [et-001](et-001/index.md) | Eesti |
+| [et-ee](et-ee/index.md) | Eesti (Eesti) |
 | [fr-001](fr-001/index.md) | Français |
 | [fr-ca](fr-ca/index.md) | Français (Canada) |
 | [fr-fr](fr-fr/index.md) | Français (France) |

@@ -56,6 +56,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `es-001` | `es_001` | Español | copy of `es-mx` |
 | `es-es` | `es_ES` | Español (España) | `es-mx` adapted to Spain: vocabulary (fallo, recuento, cesta, fiabilidad), decimal comma, 24-hour times; `noindex` |
 | `es-mx` | `es_MX` | Español (México) | translation source for Spanish; `noindex` |
+| `et-001` | `et_001` | Eesti | copy of `et-ee` |
+| `et-ee` | `et_EE` | Eesti (Eesti) | translation source for Estonian; formal address (teie), decimal comma, „“ quotes; `noindex` |
 | `fr-001` | `fr_001` | Français | copy of `fr-fr` |
 | `fr-ca` | `fr_CA` | Français (Canada) | `fr-fr` adapted to Quebec: billet for ticket, no space before ; ? !, 24-hour times written 2 h 00; `noindex` |
 | `fr-fr` | `fr_FR` | Français (France) | translation source for French; formal vous register, French spacing before : ; ? !; `noindex` |
