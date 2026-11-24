@@ -20,6 +20,9 @@
 | [de-001](de-001/index.md) | Deutsch |
 | [de-at](de-at/index.md) | Deutsch (Österreich) |
 | [de-de](de-de/index.md) | Deutsch (Deutschland) |
+| [el-001](el-001/index.md) | Ελληνικά |
+| [el-cy](el-cy/index.md) | Ελληνικά (Κύπρος) |
+| [el-gr](el-gr/index.md) | Ελληνικά (Ελλάδα) |
 | [en-001](en-001/index.md) | English |
 | [en-gb](en-gb/index.md) | English (Great Britain) |
 | [en-us](en-us/index.md) | English (United States) |

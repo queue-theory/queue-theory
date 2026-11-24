@@ -46,6 +46,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `de-001` | `de_001` | Deutsch | copy of `de-de` |
 | `de-at` | `de_AT` | Deutsch (Österreich) | copy of `de-de`; `noindex` |
 | `de-de` | `de_DE` | Deutsch (Deutschland) | translation source for German; formal address (Sie); `noindex` |
+| `el-001` | `el_001` | Ελληνικά | copy of `el-gr` |
+| `el-cy` | `el_CY` | Ελληνικά (Κύπρος) | copy of `el-gr`; `noindex` |
+| `el-gr` | `el_GR` | Ελληνικά (Ελλάδα) | translation source for Greek; Greek script, formal address (εσείς), decimal comma; `noindex` |
 | `en-001` | `en` | English | source of truth (mirror of root `README.md`) |
 | `en-gb` | `en_GB` | English (Great Britain) | British spelling; `noindex` |
 | `en-us` | `en_US` | English (United States) | American spelling; `noindex` |
