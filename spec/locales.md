@@ -92,6 +92,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ja-001` | `ja_001` | 日本語 | copy of `ja-jp` |
 | `ja-jp` | `ja_JP` | 日本語（日本） | translation source for Japanese; formal です・ます register; `noindex` |
 | `jv-001` | `jv_001` | Basa Jawa | translation source for Javanese; formal krama register (panjenengan, mangga), decimal comma, „ “ quotes |
+| `km-001` | `km_001` | ខ្មែរ | copy of `km-kh` |
+| `km-kh` | `km_KH` | ខ្មែរ (កម្ពុជា) | translation source for Khmer; formal address (លោកអ្នក, សូម), decimal comma, “ ” quotes, ។ and ៖ punctuation; `noindex` |
 | `ko-001` | `ko_001` | 한국어 | copy of `ko-kr` |
 | `ko-kr` | `ko_KR` | 한국어(대한민국) | translation source for Korean; formal 합니다체 register; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |

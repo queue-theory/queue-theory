@@ -66,6 +66,8 @@
 | [ja-001](ja-001/index.md) | 日本語 |
 | [ja-jp](ja-jp/index.md) | 日本語（日本） |
 | [jv-001](jv-001/index.md) | Basa Jawa |
+| [km-001](km-001/index.md) | ខ្មែរ |
+| [km-kh](km-kh/index.md) | ខ្មែរ (កម្ពុជា) |
 | [ko-001](ko-001/index.md) | 한국어 |
 | [ko-kr](ko-kr/index.md) | 한국어(대한민국) |
 | [nl-001](nl-001/index.md) | Nederlands |
