@@ -33,6 +33,8 @@
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
+| [sv-001](sv-001/index.md) | Svenska |
+| [sv-se](sv-se/index.md) | Svenska (Sverige) |
 | [sw-001](sw-001/index.md) | Kiswahili |
 | [sw-tz](sw-tz/index.md) | Kiswahili (Tanzania) |
 | [zh-001](zh-001/index.md) | 中文 |
