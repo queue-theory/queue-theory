@@ -46,6 +46,9 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
 | `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |
+| `ru-001` | `ru_001` | Русский | copy of `ru-ru` |
+| `ru-by` | `ru_BY` | Русский (Беларусь) | copy of `ru-ru`; `noindex` |
+| `ru-ru` | `ru_RU` | Русский (Россия) | translation source for Russian; formal вы register, «» quotes; `noindex` |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
 | `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; `noindex` |
 | `zh-tw` | `zh_TW` | 中文（台灣） | Traditional Chinese, adapted from `zh-cn` with Taiwan vocabulary and 「」 quotes |

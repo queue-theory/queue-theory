@@ -20,6 +20,9 @@
 | [hi-001](hi-001/index.md) | हिन्दी |
 | [hi-in](hi-in/index.md) | हिन्दी (भारत) |
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |
+| [ru-001](ru-001/index.md) | Русский |
+| [ru-by](ru-by/index.md) | Русский (Беларусь) |
+| [ru-ru](ru-ru/index.md) | Русский (Россия) |
 | [zh-001](zh-001/index.md) | 中文 |
 | [zh-cn](zh-cn/index.md) | 中文（中国） |
 | [zh-tw](zh-tw/index.md) | 中文（台灣） |
