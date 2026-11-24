@@ -116,6 +116,7 @@
 | [te-001](te-001/index.md) | తెలుగు |
 | [th-001](th-001/index.md) | ไทย |
 | [th-th](th-th/index.md) | ไทย (ประเทศไทย) |
+| [tl-001](tl-001/index.md) | Tagalog |
 | [tr-001](tr-001/index.md) | Türkçe |
 | [tr-tr](tr-tr/index.md) | Türkçe (Türkiye) |
 | [ur-001](ur-001/index.md) | اردو |

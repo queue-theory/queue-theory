@@ -142,6 +142,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `te-001` | `te_001` | తెలుగు | translation source for Telugu; formal address (మీరు, -ండి imperatives, దయచేసి), decimal point, “ ” quotes |
 | `th-001` | `th_001` | ไทย | copy of `th-th` |
 | `th-th` | `th_TH` | ไทย (ประเทศไทย) | translation source for Thai; formal address (ท่าน, โปรด), decimal point, “ ” quotes, 24-hour times with น.; `noindex` |
+| `tl-001` | `tl_001` | Tagalog | translation source for Tagalog; formal address (kayo, ninyo, po, paki-), decimal point, “ ” quotes |
 | `tr-001` | `tr_001` | Türkçe | copy of `tr-tr` |
 | `tr-tr` | `tr_TR` | Türkçe (Türkiye) | translation source for Turkish; formal address (siz), decimal comma, percent sign first (%80); `noindex` |
 | `ur-001` | `ur_001` | اردو | translation source for Urdu; right-to-left; formal address (آپ) |
