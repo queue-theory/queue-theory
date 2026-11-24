@@ -42,6 +42,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `cy-ar` | `cy_AR` | Cymraeg (Ariannin) | copy of `cy-gb`; `noindex` |
 | `cy-gb` | `cy_GB` | Cymraeg (Y Deyrnas Unedig) | translation source for Welsh; `noindex` |
 | `da-001` | `da_001` | Dansk | translation source for Danish; formal address (De), decimal comma |
+| `da-dk` | `da_DK` | Dansk (Danmark) | copy of `da-001`; `noindex` |
 | `de-001` | `de_001` | Deutsch | copy of `de-de` |
 | `de-at` | `de_AT` | Deutsch (Österreich) | copy of `de-de`; `noindex` |
 | `de-de` | `de_DE` | Deutsch (Deutschland) | translation source for German; formal address (Sie); `noindex` |
