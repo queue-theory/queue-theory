@@ -81,6 +81,7 @@
 | [lt-lt](lt-lt/index.md) | Lietuvių (Lietuva) |
 | [lv-001](lv-001/index.md) | Latviešu |
 | [lv-lv](lv-lv/index.md) | Latviešu (Latvija) |
+| [mr-001](mr-001/index.md) | मराठी |
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [pt-001](pt-001/index.md) | Português |
