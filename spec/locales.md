@@ -70,6 +70,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `fr-lu` | `fr_LU` | Français (Luxembourg) | copy of `fr-fr`; `noindex` |
 | `ga-001` | `ga_001` | Gaeilge | copy of `ga-ie` |
 | `ga-ie` | `ga_IE` | Gaeilge (Éire) | translation source for Irish; formal address (sibh, plural forms); `noindex` |
+| `gd-001` | `gd_001` | Gàidhlig | copy of `gd-gb` |
+| `gd-gb` | `gd_GB` | Gàidhlig (Breatainn Mhòr) | translation source for Scottish Gaelic; formal address (sibh, plural imperatives); `noindex` |
 | `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
 | `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |
