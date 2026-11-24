@@ -25,6 +25,7 @@
 | [el-gr](el-gr/index.md) | Ελληνικά (Ελλάδα) |
 | [en-001](en-001/index.md) | English |
 | [en-gb](en-gb/index.md) | English (Great Britain) |
+| [en-ie](en-ie/index.md) | English (Ireland) |
 | [en-us](en-us/index.md) | English (United States) |
 | [es-001](es-001/index.md) | Español |
 | [es-es](es-es/index.md) | Español (España) |

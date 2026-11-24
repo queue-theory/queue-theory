@@ -51,6 +51,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `el-gr` | `el_GR` | Ελληνικά (Ελλάδα) | translation source for Greek; Greek script, formal address (εσείς), decimal comma; `noindex` |
 | `en-001` | `en` | English | source of truth (mirror of root `README.md`) |
 | `en-gb` | `en_GB` | English (Great Britain) | British spelling; `noindex` |
+| `en-ie` | `en_IE` | English (Ireland) | copy of `en-gb`; British spelling; `noindex` |
 | `en-us` | `en_US` | English (United States) | American spelling; `noindex` |
 | `es-001` | `es_001` | Español | copy of `es-mx` |
 | `es-es` | `es_ES` | Español (España) | `es-mx` adapted to Spain: vocabulary (fallo, recuento, cesta, fiabilidad), decimal comma, 24-hour times; `noindex` |
