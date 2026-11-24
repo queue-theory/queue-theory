@@ -114,6 +114,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `nb-001` | `nb_001` | Norsk bokmål | copy of `nb-no` |
 | `nb-no` | `nb_NO` | Norsk bokmål (Norge) | translation source for Norwegian Bokmål; formal address (De, Deres, vennligst), decimal comma, `10 %`, « » quotes; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
+| `nl-be` | `nl_BE` | Nederlands (België) | copy of `nl-nl`; `noindex` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
 | `pt-br` | `pt_BR` | Português (Brasil) | translation source for Portuguese; formal address (imperative and impersonal forms, no tu); `noindex` |
