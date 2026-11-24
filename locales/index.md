@@ -114,6 +114,8 @@
 | [sw-tz](sw-tz/index.md) | Kiswahili (Tanzania) |
 | [ta-001](ta-001/index.md) | தமிழ் |
 | [te-001](te-001/index.md) | తెలుగు |
+| [th-001](th-001/index.md) | ไทย |
+| [th-th](th-th/index.md) | ไทย (ประเทศไทย) |
 | [tr-001](tr-001/index.md) | Türkçe |
 | [tr-tr](tr-tr/index.md) | Türkçe (Türkiye) |
 | [ur-001](ur-001/index.md) | اردو |
