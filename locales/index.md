@@ -106,6 +106,8 @@
 | [sco-gb](sco-gb/index.md) | Scots (Scotland) |
 | [sk-001](sk-001/index.md) | Slovenčina |
 | [sk-sk](sk-sk/index.md) | Slovenčina (Slovensko) |
+| [sl-001](sl-001/index.md) | Slovenščina |
+| [sl-si](sl-si/index.md) | Slovenščina (Slovenija) |
 | [sv-001](sv-001/index.md) | Svenska |
 | [sv-se](sv-se/index.md) | Svenska (Sverige) |
 | [sw-001](sw-001/index.md) | Kiswahili |

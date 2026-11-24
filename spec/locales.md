@@ -132,6 +132,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `sco-gb` | `sco_GB` | Scots (Scotland) | translation source for Scots; formal address (please, you), decimal point, `10%`; `noindex` |
 | `sk-001` | `sk_001` | Slovenčina | copy of `sk-sk` |
 | `sk-sk` | `sk_SK` | Slovenčina (Slovensko) | translation source for Slovak; formal address (vykanie, prosím), decimal comma, `10 %`, „ “ quotes, 24-hour times; `noindex` |
+| `sl-001` | `sl_001` | Slovenščina | copy of `sl-si` |
+| `sl-si` | `sl_SI` | Slovenščina (Slovenija) | translation source for Slovenian; formal address (vikanje, prosimo), decimal comma, `10 %`, „ “ quotes, 24-hour times; `noindex` |
 | `sv-001` | `sv_001` | Svenska | copy of `sv-se` |
 | `sv-se` | `sv_SE` | Svenska (Sverige) | translation source for Swedish; formal address (ni); `noindex` |
 | `sw-001` | `sw_001` | Kiswahili | copy of `sw-tz` |
