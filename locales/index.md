@@ -97,6 +97,8 @@
 | [pt-001](pt-001/index.md) | Português |
 | [pt-br](pt-br/index.md) | Português (Brasil) |
 | [pt-pt](pt-pt/index.md) | Português (Portugal) |
+| [ro-001](ro-001/index.md) | Română |
+| [ro-ro](ro-ro/index.md) | Română (România) |
 | [ru-001](ru-001/index.md) | Русский |
 | [ru-by](ru-by/index.md) | Русский (Беларусь) |
 | [ru-ru](ru-ru/index.md) | Русский (Россия) |
