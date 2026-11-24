@@ -61,6 +61,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `eu-001` | `eu_001` | Euskara | copy of `eu-es` |
 | `eu-es` | `eu_ES` | Euskara (Espainia) | translation source for Basque; standard address (zu), decimal comma, «» quotes, prefix percent (%80); `noindex` |
 | `fa-001` | `fa_001` | فارسی | translation source for Persian; right-to-left; formal address (شما); Persian punctuation (، ؛ ؟ «»); Western digits so numbers match the formulas |
+| `fi-001` | `fi_001` | Suomi | copy of `fi-fi` |
+| `fi-fi` | `fi_FI` | Suomi (Suomi) | translation source for Finnish; formal address (te, plural forms), decimal comma, ” ” quotes; `noindex` |
 | `fr-001` | `fr_001` | Français | copy of `fr-fr` |
 | `fr-ca` | `fr_CA` | Français (Canada) | `fr-fr` adapted to Quebec: billet for ticket, no space before ; ? !, 24-hour times written 2 h 00; `noindex` |
 | `fr-fr` | `fr_FR` | Français (France) | translation source for French; formal vous register, French spacing before : ; ? !; `noindex` |

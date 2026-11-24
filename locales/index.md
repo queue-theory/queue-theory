@@ -35,6 +35,8 @@
 | [eu-001](eu-001/index.md) | Euskara |
 | [eu-es](eu-es/index.md) | Euskara (Espainia) |
 | [fa-001](fa-001/index.md) | فارسی |
+| [fi-001](fi-001/index.md) | Suomi |
+| [fi-fi](fi-fi/index.md) | Suomi (Suomi) |
 | [fr-001](fr-001/index.md) | Français |
 | [fr-ca](fr-ca/index.md) | Français (Canada) |
 | [fr-fr](fr-fr/index.md) | Français (France) |
