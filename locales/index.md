@@ -77,6 +77,8 @@
 | [lb-lu](lb-lu/index.md) | Lëtzebuergesch (Lëtzebuerg) |
 | [lo-001](lo-001/index.md) | ລາວ |
 | [lo-la](lo-la/index.md) | ລາວ (ປະເທດລາວ) |
+| [lt-001](lt-001/index.md) | Lietuvių |
+| [lt-lt](lt-lt/index.md) | Lietuvių (Lietuva) |
 | [nl-001](nl-001/index.md) | Nederlands |
 | [nl-nl](nl-nl/index.md) | Nederlands (Nederland) |
 | [pt-001](pt-001/index.md) | Português |

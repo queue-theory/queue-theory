@@ -103,6 +103,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `lb-lu` | `lb_LU` | Lëtzebuergesch (Lëtzebuerg) | translation source for Luxembourgish (2019 orthography, n-rule); formal address (Dir, Är, w.e.g.), decimal comma, „ “ quotes; `noindex` |
 | `lo-001` | `lo_001` | ລາວ | copy of `lo-la` |
 | `lo-la` | `lo_LA` | ລາວ (ປະເທດລາວ) | translation source for Lao; formal address (ທ່ານ, ກະລຸນາ), decimal point, “ ” quotes; `noindex` |
+| `lt-001` | `lt_001` | Lietuvių | copy of `lt-lt` |
+| `lt-lt` | `lt_LT` | Lietuvių (Lietuva) | translation source for Lithuanian; formal address (Jūs, -kite imperatives, prašome), decimal comma, „ “ quotes; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
