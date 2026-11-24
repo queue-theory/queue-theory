@@ -59,6 +59,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ru-001` | `ru_001` | Русский | copy of `ru-ru` |
 | `ru-by` | `ru_BY` | Русский (Беларусь) | copy of `ru-ru`; `noindex` |
 | `ru-ru` | `ru_RU` | Русский (Россия) | translation source for Russian; formal вы register, «» quotes; `noindex` |
+| `sw-001` | `sw_001` | Kiswahili | copy of `sw-tz` |
+| `sw-tz` | `sw_TZ` | Kiswahili (Tanzania) | translation source for Swahili; respectful plural address (tazameni, punguzeni); `noindex` |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
 | `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; `noindex` |
 | `zh-tw` | `zh_TW` | 中文（台灣） | Traditional Chinese, adapted from `zh-cn` with Taiwan vocabulary and 「」 quotes |
