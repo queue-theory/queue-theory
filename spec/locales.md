@@ -80,6 +80,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |
 | `hr-001` | `hr_001` | Hrvatski | copy of `hr-hr` |
 | `hr-hr` | `hr_HR` | Hrvatski (Hrvatska) | translation source for Croatian; formal address (Vi); `noindex` |
+| `hu-001` | `hu_001` | Magyar | copy of `hu-hu` |
+| `hu-hu` | `hu_HU` | Magyar (Magyarország) | translation source for Hungarian; formal address (Ön); `noindex` |
 | `id-001` | `id_001` | Bahasa Indonesia | copy of `id-id` |
 | `id-id` | `id_ID` | Bahasa Indonesia (Indonesia) | translation source for Indonesian; formal Anda register; `noindex` |
 | `id-my` | `id_MY` | Bahasa Indonesia (Malaysia) | copy of `id-id`; `noindex` |

@@ -54,6 +54,8 @@
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |
 | [hr-001](hr-001/index.md) | Hrvatski |
 | [hr-hr](hr-hr/index.md) | Hrvatski (Hrvatska) |
+| [hu-001](hu-001/index.md) | Magyar |
+| [hu-hu](hu-hu/index.md) | Magyar (Magyarország) |
 | [id-001](id-001/index.md) | Bahasa Indonesia |
 | [id-id](id-id/index.md) | Bahasa Indonesia (Indonesia) |
 | [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
