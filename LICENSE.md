@@ -16,14 +16,14 @@ License is any of these, at your option, or contact us for custom license option
 
 - [UK Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) ([SPDX: OGL-UK-3.0](https://spdx.org/licenses/OGL-UK-3.0.html))
 
-- [Creative Commons Attribution Non Commercial Share Alike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) ([SPDX: CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html))
+- [Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) ([SPDX: CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html))
 
 ## SPDX
 
 The machine-readable expression for the choice above is:
 
 ```
-SPDX-License-Identifier: MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause OR OGL-UK-3.0 OR CC-BY-NC-SA-4.0
+SPDX-License-Identifier: MIT OR Apache-2.0 OR GPL-2.0-only OR GPL-3.0-only OR BSD-3-Clause OR OGL-UK-3.0 OR CC-BY-SA-4.0
 ```
 
 Every package manifest in this repository should carry that expression, or a
@@ -38,9 +38,9 @@ the documentation.
 ## Scope note
 
 This file supersedes an earlier notice that offered only `CC-BY-NC-SA-4.0` or
-`OGL-UK-3.0`. Both are still offered, as two options among seven.
-`CC-BY-NC-SA-4.0` restricts use to non-commercial purposes; anyone who needs
-commercial use chooses another license from the list, such as `MIT`.
+`OGL-UK-3.0`. `OGL-UK-3.0` is still offered, as one option among seven.
+`CC-BY-NC-SA-4.0` is replaced by `CC-BY-SA-4.0`, which permits commercial use
+and requires attribution and that adaptations are shared under the same license.
 
 ## Third-party works
 
@@ -57,4 +57,4 @@ The full text of each license is in its own directory:
 - [GPL-2.0-only](LICENSES/gpl-2.0-only/index.md)
 - [GPL-3.0-only](LICENSES/gpl-3.0-only/index.md)
 - [OGL-UK-3.0](LICENSES/ogl-uk-3.0/index.md)
-- [CC-BY-NC-SA-4.0](LICENSES/cc-by-nc-sa-4.0/index.md)
+- [CC-BY-SA-4.0](LICENSES/cc-by-sa-4.0/index.md)
