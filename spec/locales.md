@@ -139,6 +139,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `sw-001` | `sw_001` | Kiswahili | copy of `sw-tz` |
 | `sw-tz` | `sw_TZ` | Kiswahili (Tanzania) | translation source for Swahili; respectful plural address (tazameni, punguzeni); `noindex` |
 | `ta-001` | `ta_001` | தமிழ் | translation source for Tamil; formal address (நீங்கள், -ங்கள் imperatives, தயவுசெய்து), decimal point, “ ” quotes |
+| `te-001` | `te_001` | తెలుగు | translation source for Telugu; formal address (మీరు, -ండి imperatives, దయచేసి), decimal point, “ ” quotes |
 | `tr-001` | `tr_001` | Türkçe | copy of `tr-tr` |
 | `tr-tr` | `tr_TR` | Türkçe (Türkiye) | translation source for Turkish; formal address (siz), decimal comma, percent sign first (%80); `noindex` |
 | `ur-001` | `ur_001` | اردو | translation source for Urdu; right-to-left; formal address (آپ) |

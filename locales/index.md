@@ -113,6 +113,7 @@
 | [sw-001](sw-001/index.md) | Kiswahili |
 | [sw-tz](sw-tz/index.md) | Kiswahili (Tanzania) |
 | [ta-001](ta-001/index.md) | தமிழ் |
+| [te-001](te-001/index.md) | తెలుగు |
 | [tr-001](tr-001/index.md) | Türkçe |
 | [tr-tr](tr-tr/index.md) | Türkçe (Türkiye) |
 | [ur-001](ur-001/index.md) | اردو |
