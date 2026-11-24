@@ -38,8 +38,10 @@
 | [fi-001](fi-001/index.md) | Suomi |
 | [fi-fi](fi-fi/index.md) | Suomi (Suomi) |
 | [fr-001](fr-001/index.md) | Français |
+| [fr-be](fr-be/index.md) | Français (Belgique) |
 | [fr-ca](fr-ca/index.md) | Français (Canada) |
 | [fr-fr](fr-fr/index.md) | Français (France) |
+| [fr-lu](fr-lu/index.md) | Français (Luxembourg) |
 | [hi-001](hi-001/index.md) | हिन्दी |
 | [hi-in](hi-in/index.md) | हिन्दी (भारत) |
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |

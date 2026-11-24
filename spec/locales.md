@@ -64,8 +64,10 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `fi-001` | `fi_001` | Suomi | copy of `fi-fi` |
 | `fi-fi` | `fi_FI` | Suomi (Suomi) | translation source for Finnish; formal address (te, plural forms), decimal comma, ” ” quotes; `noindex` |
 | `fr-001` | `fr_001` | Français | copy of `fr-fr` |
+| `fr-be` | `fr_BE` | Français (Belgique) | copy of `fr-fr`; `noindex` |
 | `fr-ca` | `fr_CA` | Français (Canada) | `fr-fr` adapted to Quebec: billet for ticket, no space before ; ? !, 24-hour times written 2 h 00; `noindex` |
 | `fr-fr` | `fr_FR` | Français (France) | translation source for French; formal vous register, French spacing before : ; ? !; `noindex` |
+| `fr-lu` | `fr_LU` | Français (Luxembourg) | copy of `fr-fr`; `noindex` |
 | `hi-001` | `hi_001` | हिन्दी | copy of `hi-in` |
 | `hi-in` | `hi_IN` | हिन्दी (भारत) | translation source for Hindi; formal register; `noindex` |
 | `hi-np` | `hi_NP` | हिन्दी (नेपाल) | copy of `hi-in`; `noindex` |
