@@ -105,6 +105,8 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `lo-la` | `lo_LA` | ລາວ (ປະເທດລາວ) | translation source for Lao; formal address (ທ່ານ, ກະລຸນາ), decimal point, “ ” quotes; `noindex` |
 | `lt-001` | `lt_001` | Lietuvių | copy of `lt-lt` |
 | `lt-lt` | `lt_LT` | Lietuvių (Lietuva) | translation source for Lithuanian; formal address (Jūs, -kite imperatives, prašome), decimal comma, „ “ quotes; `noindex` |
+| `lv-001` | `lv_001` | Latviešu | copy of `lv-lv` |
+| `lv-lv` | `lv_LV` | Latviešu (Latvija) | translation source for Latvian; formal address (Jūs, -iet imperatives, lūdzu), decimal comma, „ “ quotes; `noindex` |
 | `nl-001` | `nl_001` | Nederlands | copy of `nl-nl` |
 | `nl-nl` | `nl_NL` | Nederlands (Nederland) | translation source for Dutch; formal address (u); `noindex` |
 | `pt-001` | `pt_001` | Português | copy of `pt-br` |
