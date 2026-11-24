@@ -149,6 +149,7 @@ landing cards are chosen by H2 position (see [website.md](website.md)).
 | `ur-001` | `ur_001` | اردو | translation source for Urdu; right-to-left; formal address (آپ) |
 | `vi-001` | `vi_001` | Tiếng Việt | copy of `vi-vn` |
 | `vi-vn` | `vi_VN` | Tiếng Việt (Việt Nam) | translation source for Vietnamese; formal address (quý vị); `noindex` |
+| `wuu-001` | `wuu_001` | 吴语 | translation source for Wu Chinese; Simplified characters, Shanghai-style written Wu; no formal/informal pronoun choice (侬) |
 | `zh-001` | `zh_001` | 中文 | copy of `zh-cn` |
 | `zh-cn` | `zh_CN` | 中文（中国） | Simplified Chinese translation source; `noindex` |
 | `zh-tw` | `zh_TW` | 中文（台灣） | Traditional Chinese, adapted from `zh-cn` with Taiwan vocabulary and 「」 quotes |
