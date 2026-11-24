@@ -52,6 +52,8 @@
 | [hi-001](hi-001/index.md) | हिन्दी |
 | [hi-in](hi-in/index.md) | हिन्दी (भारत) |
 | [hi-np](hi-np/index.md) | हिन्दी (नेपाल) |
+| [hr-001](hr-001/index.md) | Hrvatski |
+| [hr-hr](hr-hr/index.md) | Hrvatski (Hrvatska) |
 | [id-001](id-001/index.md) | Bahasa Indonesia |
 | [id-id](id-id/index.md) | Bahasa Indonesia (Indonesia) |
 | [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
