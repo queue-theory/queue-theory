@@ -30,6 +30,8 @@
 | [id-001](id-001/index.md) | Bahasa Indonesia |
 | [id-id](id-id/index.md) | Bahasa Indonesia (Indonesia) |
 | [id-my](id-my/index.md) | Bahasa Indonesia (Malaysia) |
+| [it-001](it-001/index.md) | Italiano |
+| [it-it](it-it/index.md) | Italiano (Italia) |
 | [ja-001](ja-001/index.md) | 日本語 |
 | [ja-jp](ja-jp/index.md) | 日本語（日本） |
 | [ko-001](ko-001/index.md) | 한국어 |
