@@ -152,7 +152,7 @@ Example:
 
 - κ ≪ 10 means much less than 10
 
-- κ ≫ 10 means greater than 10
+- κ ≫ 10 means much greater than 10
 
 The count κ (kappa) is a snapshot at one moment.
 
@@ -345,7 +345,7 @@ Also:
 
 ## Queue math
 
-The math sections use textbook symbols, so that you can compare them with other sources: S is the average service time, which is our φ, and μ = 1 / S is one server's capacity. See the crosswalk in [queue theory notation](#queue-theory-notation).
+The math sections use textbook symbols, so that you can compare them with other sources: S is the average service time, which is our φ, and μ = 1 / S is one server's capacity.
 
 ### The utilization curve
 
