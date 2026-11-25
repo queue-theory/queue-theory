@@ -10,9 +10,10 @@ all: content check build verify
 install:
 	cd $(SITE) && pnpm install
 
-# Mirror the root README into en-001, then regenerate the site's content.
+# Mirror the root README into en-001 and the root static/images into the site, then regenerate the site's content.
 content:
 	cp README.md locales/en-001/index.md
+	rm -rf $(SITE)/static/images && cp -R static/images $(SITE)/static/images
 	cd $(SITE) && pnpm run content
 
 # Every locale has index.md, sitemap.xml, a README.md symlink to it, and the shared peer id.

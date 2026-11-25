@@ -11,7 +11,7 @@ A guide to queueing theory for software teams (`README.md`), translated under
 - Translate from `locales/en-001/index.md`, one locale at a time; see [spec/locales.md](spec/locales.md).
 - In each locale directory `README.md` is a symlink to `index.md`; never hand-edit `.locale-peer-id`.
 - Never hand-edit generated site files: `src/content/`, `src/lib/locale-pages.json`,
-  `static/search/`, `static/sitemap.xml`, `static/llms.*`.
+  `static/images/`, `static/search/`, `static/sitemap.xml`, `static/llms.*`.
 - Keep product names, code, formulas, and URLs untranslated.
 
 ## Before committing
