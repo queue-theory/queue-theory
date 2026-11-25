@@ -1,7 +1,7 @@
 # Queue theory
 
-Queue theory is the mathematical study of waiting lines, or queues. We use
-queueing theory in our software development, for purposes such as analyzing and
+Queue theory is the mathematical study of waiting lines a.k.a. queues. We use
+queueing in our software development, and queue theory for analyzing and
 optimizing our practices and processes, such as our customer service
 responsiveness, project management kanban planning, inter-process communication
 message queues, and devops continuous deployment pipelines.
